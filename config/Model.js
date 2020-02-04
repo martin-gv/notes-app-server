@@ -131,7 +131,7 @@ Model.prototype.delete = function(query) {
 };
 
 Model.prototype.findByIdAndDelete = async function(id) {
-  const results = await deleteByQuery.call(this, { id, title: "banana" });
+  const results = await deleteByQuery.call(this, { id });
   return results;
 };
 
